@@ -1,23 +1,44 @@
 {
-    "users": [
+  "users": [
+    {
+      "id": 123123,
+      "login": "Mike",
+      "password": "parol123",
+      "email": "mike@mail.ru",
+      "categories": [
         {
-            "id": 123123,
-            "login": "Mike",
-            "password": "parol123",
-            "email": "mike@mail.ru",
-            "categories": [
-                {
-                    "id": 324456,
-                    "categoryName": "Frontend",
-                    "tasks": [
-                        {
-                            "id": 523645,
-                            "taskTitle": "Изучить React",
-                            "isCompelete": false
-                        }
-                    ]
-                }
-            ]
+          "id": 324456,
+          "categoryName": "Frontend",
+          "tasks": [
+            {
+              "id": 523645,
+              "taskTitle": "Изучить React",
+              "isCompelete": false
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "email": "asd@mail.ru",
+      "password": "$2a$10$gRjrrrJp6xIXnE8X/KRv0uZs1Dn0Et8hfCRTdVbzrM7infXxGxoFm",
+      "login": "123",
+      "categories": [],
+      "id": 123124
+    },
+    {
+      "email": "as2d@mail.ru",
+      "password": "$2a$10$iCaj4ZUsxeksCvCcS5ZPm.rMA/KW1W.R4unGlvMGFc3quNyQVf5ZK",
+      "login": "1233",
+      "categories": [],
+      "id": 123125
+    },
+    {
+      "email": "aaa@mail.ru",
+      "password": "$2a$10$Iz9ZalKdEMu/VF3OkGUYmumw9ihk6v9u4di81pFqVxNPpMB8Te72y",
+      "login": "aaa",
+      "categories": [],
+      "id": 123126
+    }
+  ]
 }

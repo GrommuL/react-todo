@@ -1,0 +1,23 @@
+{
+    "users": [
+        {
+            "id": 123123,
+            "login": "Mike",
+            "password": "parol123",
+            "email": "mike@mail.ru",
+            "categories": [
+                {
+                    "id": 324456,
+                    "categoryName": "Frontend",
+                    "tasks": [
+                        {
+                            "id": 523645,
+                            "taskTitle": "Изучить React",
+                            "isCompelete": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

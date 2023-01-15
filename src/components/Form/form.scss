@@ -13,7 +13,7 @@
         font-size: 64px;
         line-height: 80px;
         text-align: center;
-        color: $blue;
+        color: $white;
     }
     &__label{
         height: 55px;
@@ -24,7 +24,7 @@
         max-width: 300px;
         text-align: center;
         font-size: 14px;
-        color: $red;
+        color: $green;
     }
     &__field{
         width: 300px;
@@ -42,14 +42,12 @@
         font-family: 'Montserrat', sans-serif;
         line-height: 17px;
         font-weight: 700;
-        color: $darkBlue;
+        color: $white;
         &-link{
             line-height: 17px;
-            color: $black;
-            transition: all .2s linear;
+            color: $green;
             &:hover{
-                color: $purple;
-                text-decoration: underline $purple;
+                text-decoration: underline $green;
                 text-underline-offset: 4px;
             }
         }

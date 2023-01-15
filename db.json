@@ -44,7 +44,38 @@
       "email": "df@mail.ru",
       "password": "$2a$10$2ge1DiFw.A8JATQ9XdKhw.0.iY/znCOp2InLi5jrlTrKHIshAJtrW",
       "login": "df123",
-      "categories": [],
+      "categories": [
+        {
+          "id": "1642bd26-b2b7-4ebd-a386-4f1085da6cde",
+          "categoryName": "123123",
+          "color": "#FFFF00",
+          "tasks": []
+        },
+        {
+          "id": "6c4c56e7-55ad-4200-936b-ecc6d927daaa",
+          "categoryName": "1234",
+          "color": "#FFFF00",
+          "tasks": []
+        },
+        {
+          "id": "483b1d0f-abb0-49c6-a7ae-aa964a277345",
+          "categoryName": "Frontend",
+          "color": "#00FF00",
+          "tasks": []
+        },
+        {
+          "id": "1bbe7d70-0609-4eaf-b6c2-6a46865e115e",
+          "categoryName": "Frontend",
+          "color": "#FF0000",
+          "tasks": []
+        },
+        {
+          "id": "c6553da5-39bb-4132-9189-67068b73e393",
+          "categoryName": "Frontend",
+          "color": "#FF0000",
+          "tasks": []
+        }
+      ],
       "id": 123127
     }
   ]

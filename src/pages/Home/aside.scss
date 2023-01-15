@@ -55,4 +55,67 @@
             color: $gray;
         }
     }
+    &__create{
+        position: relative;
+    }
+    &__popup{
+        position: absolute;
+        bottom: -150px;
+        right: -100px;
+        width: 235px;
+        height: 148px;
+        padding: 20px;
+        background: $lightBlue;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        &-close{
+            position: absolute;
+            top: -10px;
+            right: -15px;
+            color: $white;
+            font-size: 30px;
+            transform: rotate(45deg);
+            width: 30px;
+            height: 30px;
+            background: $darkBlue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    &__field{
+        width: 200px;
+        height: 32px;
+        border: 1px solid $blue;
+        border-radius: 4px;
+        padding-left: 10px;
+    }
+    &__colors{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__color{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__add{
+        width: 170px;
+        height: 37px;
+        border-radius: 4px;
+        background: $green;
+        color: $blue;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
 }

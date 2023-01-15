@@ -71,7 +71,7 @@ const Form = () => {
         {location.pathname === '/register' ?<label className='form__label'>
     <input className='form__field' type="text" placeholder='Введите логин' {...register('login',{
       required:{
-        message:'Поле логин,обязателен к заполнению',
+        message:'Поле логин, обязателен к заполнению',
         value:true
       },
       maxLength: {
@@ -88,7 +88,7 @@ const Form = () => {
     <label className='form__label'>
     <input className='form__field' type="email" placeholder='Введите почту' {...register('email',{
       required:{
-        message:'Email,обязателен к заполнению',
+        message:'Email, обязателен к заполнению',
         value:true
       },
       minLength: {

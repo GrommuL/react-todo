@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
-import { Link, useNavigate,useLocation } from 'react-router-dom'
+import { Link, useNavigate,useLocation, Navigate } from 'react-router-dom'
 import axios from 'axios'
 import './form.scss'
+import { CustomContext } from '../../utils/Context'
 
 const Form = () => {
-
 
     const navigate = useNavigate()
 
     const location = useLocation()
+
+    const {user,setUser} = useContext(CustomContext)
 
     const {
       register,
@@ -25,6 +27,14 @@ const Form = () => {
         ...data,
         categories:[]
       }).then((res) => {
+        setUser({
+          token: res.data.accessToken,
+          ...res.data.user
+        })
+        localStorage.setItem('user', JSON.stringify({
+          token: res.data.accessToken,
+          ...res.data.user
+        }))
         reset()
         navigate('/')
       }).catch(err => console.log(err))
@@ -34,6 +44,14 @@ const Form = () => {
         axios.post('http://localhost:8080/login',{
           ...data
         }).then((res) => {
+          setUser({
+            token: res.data.accessToken,
+            ...res.data.user
+          })
+          localStorage.setItem('user', JSON.stringify({
+            token: res.data.accessToken,
+            ...res.data.user
+          }))
           reset()
           navigate('/')
         }).catch(err => console.log(err))
@@ -43,8 +61,12 @@ const Form = () => {
         location.pathname === '/register' ? registerUser(data) : loginUser(data)
     }
 
+    if (user.email.length !== 0){
+      return <Navigate to='/'/>
+    }
+
   return (
-    <form noValidate className='form' onSubmit={handleSubmit(onSubmit)}>
+    <form className='form' noValidate onSubmit={handleSubmit(onSubmit)}>
     <h2 className='form__title'>{location.pathname === '/register' ? 'Регистрация' : 'Вход'}</h2>
         {location.pathname === '/register' ?<label className='form__label'>
     <input className='form__field' type="text" placeholder='Введите логин' {...register('login',{

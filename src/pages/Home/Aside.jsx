@@ -5,6 +5,8 @@ import { dataColors } from '../../utils/dataColors'
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 import { CustomContext } from '../../utils/Context';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Aside = () => {
 
@@ -12,6 +14,41 @@ const Aside = () => {
     const [color, setColor] = useState(dataColors[0])
     const [category, setCategory] = useState('')
     const {user, setUser} = useContext(CustomContext)
+
+
+    const logOutUser = () =>{
+        localStorage.removeItem('user')
+        setUser({
+            email: ''
+        })
+    }
+
+    const checkCategoryName = () => {
+        if(user.categories.findIndex(item => item.categoryName === category) > -1){
+            toast('Папка с таким именем уже существует')
+        } else{
+            addCategories()
+        }
+
+    }
+
+
+    const deleteCategory = (id) => {
+        let newCategory = user.categories.filter(item => item.id !== id)
+        axios.patch(`http://localhost:8080/users/${user.id}`,{categories : newCategory})
+        .then(({data})=> {
+            setUser({
+                ...data,
+                token: user.token
+            })
+            localStorage.setItem('user', JSON.stringify({
+                ...data,
+                token: user.token
+            }))
+            toast("Папка была успешно удалена")
+        }).catch(err => toast(`Произошла ошибка при удалении папки, ${err.message}`))
+    }
+
 
     const addCategories = () =>{
         let newCategory ={
@@ -31,8 +68,12 @@ const Aside = () => {
             }))
             setActive(false)
             setCategory('')
-        }).catch(err => console.log(err))
+            toast("Папка была успешно добавлена")
+        }).catch(err => toast(`Произошла ошибка при добавлении папки, ${err.message}`))
     }
+
+
+
   return (
     <aside className='aside'>
         <div className='aside__all'>
@@ -43,8 +84,11 @@ const Aside = () => {
             {
                 user.categories.map(item => (
                     <li className='aside__item' key={item.id}>
+                        <div className='aside__item-left'>
                         <span style={{background: item.color}} className='aside__item-color'></span>
                         <p className='aside__item-text'>{item.categoryName}</p>
+                        </div>
+                        <span className='aside__item-delete' onClick={()=> deleteCategory(item.id)}>+</span>
                     </li>
                 ))
             }
@@ -58,10 +102,11 @@ const Aside = () => {
                         <span className='aside__color' key={item} style={{background: item, border: color === item ? '2px solid black' : 'none'}} onClick={()=> setColor(item)}/>
                     ))}
                 </div>
-                <button className='aside__add' type='button' onClick={addCategories}>Добавить</button>
+                <button className='aside__add' type='button' onClick={checkCategoryName}>Добавить</button>
                 <span className='aside__popup-close'onClick={()=> setActive(false)}>+</span>
             </div>
         </div>
+        <button className='aside__exit' onClick={logOutUser}>Выйти из аккаунта</button>
     </aside>
   )
 }

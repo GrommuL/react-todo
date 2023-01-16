@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import { Navigate } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
 import { CustomContext } from '../../utils/Context'
 import Aside from './Aside'
 
@@ -16,6 +17,7 @@ const {user} = useContext(CustomContext)
       <div className='content'>
         asd
       </div>
+      <ToastContainer />
     </section>
   )
 }

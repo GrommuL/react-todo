@@ -13,7 +13,7 @@
             {
               "id": 523645,
               "taskTitle": "Изучить React",
-              "isCompelete": false
+              "isComplete": false
             }
           ]
         }
@@ -65,7 +65,12 @@
             {
               "id": 523645,
               "taskTitle": "Изучить React",
-              "isCompelete": false
+              "isComplete": false
+            },
+            {
+              "id": 52645,
+              "taskTitle": "Изучить Vue",
+              "isComplete": true
             }
           ]
         },

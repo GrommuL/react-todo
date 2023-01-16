@@ -8,9 +8,17 @@ export const Context = (props) => {
         email: ''
     })
 
+    const [status, setStatus] = useState('Все задачи')
+
+    const [colorStatus, setColorStatus] = useState('#FFFFFF')
+
     const value = {
         user: user,
-        setUser: setUser
+        setUser: setUser,
+        status,
+        setStatus,
+        colorStatus,
+        setColorStatus
     }
 
     return <CustomContext.Provider value={value}>

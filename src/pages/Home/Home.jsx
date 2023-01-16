@@ -3,6 +3,7 @@ import { Navigate } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import { CustomContext } from '../../utils/Context'
 import Aside from './Aside'
+import HomeContent from './HomeContent'
 
 const Home = () => {
 
@@ -14,9 +15,7 @@ const {user} = useContext(CustomContext)
   return (
     <section className='home'>
       <Aside/>
-      <div className='content'>
-        asd
-      </div>
+      <HomeContent/>
       <ToastContainer />
     </section>
   )

@@ -48,13 +48,67 @@
         {
           "id": "eeb7e6c3-0c97-4541-b1c1-53c85b8fa617",
           "categoryName": "Frontend",
-          "color": "#FF0000",
+          "color": "#A0C0E0",
           "tasks": []
         },
         {
           "id": "5fb4e163-ac2f-4b4d-aa01-dc446f018727",
           "categoryName": "Backend",
+          "color": "#997379",
+          "tasks": []
+        },
+        {
+          "id": "c1966817-9090-46cc-953f-70dbf7467a7b",
+          "categoryName": "Fullstack",
+          "color": "#4682B4",
+          "tasks": [
+            {
+              "id": 523645,
+              "taskTitle": "Изучить React",
+              "isCompelete": false
+            }
+          ]
+        },
+        {
+          "id": "5eb3b28b-af44-4e90-81e4-d8e36f441496",
+          "categoryName": "DataScience",
+          "color": "#FF8C00",
+          "tasks": []
+        },
+        {
+          "id": "50e21929-f0e5-42c4-a3d6-0cbf373607ca",
+          "categoryName": "Home",
+          "color": "#FF8C00",
+          "tasks": []
+        },
+        {
+          "id": "919ad28f-1a99-4aff-b8df-2cc01cdd0f70",
+          "categoryName": "University",
+          "color": "#997379",
+          "tasks": []
+        },
+        {
+          "id": "9077d527-a519-4bea-b106-537e8b683bcb",
+          "categoryName": "Store",
+          "color": "#00FFFF",
+          "tasks": []
+        },
+        {
+          "id": "a7393adf-9e15-415f-b026-3ed31dc7739f",
+          "categoryName": "Sport",
+          "color": "#FFFF00",
+          "tasks": []
+        },
+        {
+          "id": "a1ce2dc1-653d-43f6-a046-f2c83cb57dbf",
+          "categoryName": "Family",
           "color": "#FF69B4",
+          "tasks": []
+        },
+        {
+          "id": "8a88b678-52ed-4258-910b-f8d73809105c",
+          "categoryName": "Friends",
+          "color": "#00FF00",
           "tasks": []
         }
       ],

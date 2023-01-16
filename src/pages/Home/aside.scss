@@ -2,7 +2,7 @@
 
 .aside{
     position: relative;
-    width: 400px;
+    width: 350px;
     height: 100vh;
     background: $darkBlue;
     padding: 80px 40px 0;
@@ -13,6 +13,13 @@
         align-items: center;
         gap: 12px;
         margin-bottom: 30px;
+        padding: 10px;
+        width: 200px;
+        cursor: pointer;
+        transition: all .2s linear;
+        &:hover{
+            color: $green;
+        }
     }
     &__text{
         font-family: 'Montserrat', sans-serif;
@@ -20,7 +27,7 @@
     }
     &__menu{
         margin-bottom: 40px;
-        max-height: 400px;
+        max-height: 450px;
         overflow-y: scroll;
     }
     &__item{
@@ -82,8 +89,8 @@
     }
     &__popup{
         position: absolute;
-        bottom: -150px;
-        right: -100px;
+        bottom: -80px;
+        right: -200px;
         width: 235px;
         height: 148px;
         padding: 20px;
@@ -161,4 +168,11 @@
         }
     }
 
+}
+
+.active{
+    background: $blue;
+    .aside__item-delete{
+        display: flex;
+    }
 }

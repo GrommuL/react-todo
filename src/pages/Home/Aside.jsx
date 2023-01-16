@@ -13,7 +13,7 @@ const Aside = () => {
     const [active,setActive] = useState(false)
     const [color, setColor] = useState(dataColors[0])
     const [category, setCategory] = useState('')
-    const {user, setUser} = useContext(CustomContext)
+    const {user, setUser, status, setStatus, setColorStatus} = useContext(CustomContext)
 
 
     const logOutUser = () =>{
@@ -76,14 +76,20 @@ const Aside = () => {
 
   return (
     <aside className='aside'>
-        <div className='aside__all'>
+        <div className={`aside__all ${status === 'Все задачи' ? 'active' : ''}`} onClick={()=> {
+            setStatus('Все задачи')
+            setColorStatus('#FFFFFF')
+            }}>
             <ListGroupIcon/>
             <p className='aside__text'>Все задачи</p>
         </div>
         <ul className='aside__menu'>
             {
                 user.categories.map(item => (
-                    <li className='aside__item' key={item.id}>
+                    <li className={`aside__item ${status === item.categoryName ? 'active' : ''}`} key={item.id} onClick={()=> {
+                        setStatus(item.categoryName)
+                        setColorStatus(item.color)
+                        }}>
                         <div className='aside__item-left'>
                         <span style={{background: item.color}} className='aside__item-color'></span>
                         <p className='aside__item-text'>{item.categoryName}</p>

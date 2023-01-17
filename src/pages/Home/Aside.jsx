@@ -94,7 +94,10 @@ const Aside = () => {
                         <span style={{background: item.color}} className='aside__item-color'></span>
                         <p className='aside__item-text'>{item.categoryName}</p>
                         </div>
-                        <span className='aside__item-delete' onClick={()=> deleteCategory(item.id)}>+</span>
+                        <span className='aside__item-delete' onClick={(e)=> {
+                            e.stopPropagation()
+                            deleteCategory(item.id)}
+                            }>+</span>
                     </li>
                 ))
             }

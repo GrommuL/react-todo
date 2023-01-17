@@ -12,8 +12,8 @@ const {user,status, colorStatus} = useContext(CustomContext)
     <div className='content'>
         {
             status === 'Все задачи' ? user.categories.map(item =>(
-                <ContentCategory key={item.id} status={item.categoryName} colorStatus = {item.color}/>
-            )) : <ContentCategory status = { status } colorStatus = { colorStatus }/>
+                <ContentCategory key={item.id} statusContent={item.categoryName} colorStatusContent = {item.color}/>
+            )) : <ContentCategory statusContent = { status } colorStatusContent = { colorStatus }/>
         }
     </div>
   )

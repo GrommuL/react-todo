@@ -1,11 +1,154 @@
 {
   "users": [
     {
-      "email": "df@mail.ru",
-      "password": "$2a$10$vbt4XsCOj5kWiWu3yT0w.e27RMmMBVKCVQa4/TCxRkXWEirUKgztm",
-      "login": "dfdf",
+      "id": 123123,
+      "login": "Mike",
+      "password": "parol123",
+      "email": "mike@mail.ru",
+      "categories": [
+        {
+          "id": 324456,
+          "categoryName": "Frontend",
+          "tasks": [
+            {
+              "id": 523645,
+              "taskTitle": "Изучить React",
+              "isComplete": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "email": "asd@mail.ru",
+      "password": "$2a$10$gRjrrrJp6xIXnE8X/KRv0uZs1Dn0Et8hfCRTdVbzrM7infXxGxoFm",
+      "login": "123",
       "categories": [],
-      "id": 1
+      "id": 123124
+    },
+    {
+      "email": "as2d@mail.ru",
+      "password": "$2a$10$iCaj4ZUsxeksCvCcS5ZPm.rMA/KW1W.R4unGlvMGFc3quNyQVf5ZK",
+      "login": "1233",
+      "categories": [
+        {
+          "id": "df02a963-bafb-4201-b06a-52576f383814",
+          "categoryName": "Frontend1",
+          "color": "#A0C0E0",
+          "tasks": [
+            {
+              "taskTitle": "123",
+              "id": "555c7175-5f74-4e05-b586-f90f3e95925f",
+              "isComplete": false
+            }
+          ]
+        },
+        {
+          "id": "150c2b80-af60-40c1-a34e-46eb07b064bf",
+          "categoryName": "Backend",
+          "color": "#00FFFF",
+          "tasks": []
+        },
+        {
+          "id": "06f4cc5b-8537-485a-842b-f591d47c9d88",
+          "categoryName": "React",
+          "color": "#997379",
+          "tasks": []
+        },
+        {
+          "id": "26d635ec-af9a-4425-a93b-609ab48b29d1",
+          "categoryName": "Angular",
+          "color": "#4682B4",
+          "tasks": []
+        }
+      ],
+      "id": 123125
+    },
+    {
+      "email": "aaa@mail.ru",
+      "password": "$2a$10$Iz9ZalKdEMu/VF3OkGUYmumw9ihk6v9u4di81pFqVxNPpMB8Te72y",
+      "login": "aaa",
+      "categories": [],
+      "id": 123126
+    },
+    {
+      "email": "df@mail.ru",
+      "password": "$2a$10$2ge1DiFw.A8JATQ9XdKhw.0.iY/znCOp2InLi5jrlTrKHIshAJtrW",
+      "login": "df123",
+      "categories": [
+        {
+          "id": "eeb7e6c3-0c97-4541-b1c1-53c85b8fa617",
+          "categoryName": "Frontend",
+          "color": "#A0C0E0",
+          "tasks": []
+        },
+        {
+          "id": "5fb4e163-ac2f-4b4d-aa01-dc446f018727",
+          "categoryName": "Backend",
+          "color": "#997379",
+          "tasks": []
+        },
+        {
+          "id": "c1966817-9090-46cc-953f-70dbf7467a7b",
+          "categoryName": "Fullstack",
+          "color": "#4682B4",
+          "tasks": [
+            {
+              "id": 523645,
+              "taskTitle": "Изучить React",
+              "isComplete": false
+            },
+            {
+              "id": 52645,
+              "taskTitle": "Изучить Vue",
+              "isComplete": true
+            }
+          ]
+        },
+        {
+          "id": "5eb3b28b-af44-4e90-81e4-d8e36f441496",
+          "categoryName": "DataScience",
+          "color": "#FF8C00",
+          "tasks": []
+        },
+        {
+          "id": "50e21929-f0e5-42c4-a3d6-0cbf373607ca",
+          "categoryName": "Home",
+          "color": "#FF8C00",
+          "tasks": []
+        },
+        {
+          "id": "919ad28f-1a99-4aff-b8df-2cc01cdd0f70",
+          "categoryName": "University",
+          "color": "#997379",
+          "tasks": []
+        },
+        {
+          "id": "9077d527-a519-4bea-b106-537e8b683bcb",
+          "categoryName": "Store",
+          "color": "#00FFFF",
+          "tasks": []
+        },
+        {
+          "id": "a7393adf-9e15-415f-b026-3ed31dc7739f",
+          "categoryName": "Sport",
+          "color": "#FFFF00",
+          "tasks": []
+        },
+        {
+          "id": "a1ce2dc1-653d-43f6-a046-f2c83cb57dbf",
+          "categoryName": "Family",
+          "color": "#FF69B4",
+          "tasks": []
+        },
+        {
+          "id": "8a88b678-52ed-4258-910b-f8d73809105c",
+          "categoryName": "Friends",
+          "color": "#00FF00",
+          "tasks": []
+        }
+      ],
+      "id": 123127
     }
   ]
 }

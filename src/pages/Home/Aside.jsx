@@ -24,7 +24,7 @@ const Aside = () => {
     }
 
     const checkCategoryName = () => {
-        if(user.categories.findIndex(item => item.categoryName === category) > -1){
+        if( user.categories.findIndex(item => item.categoryName === category) > -1){
             toast('Папка с таким именем уже существует')
         } else{
             addCategories()
@@ -96,8 +96,8 @@ const Aside = () => {
                         </div>
                         <span className='aside__item-delete' onClick={(e)=> {
                             e.stopPropagation()
-                            deleteCategory(item.id)}
-                            }>+</span>
+                            deleteCategory(item.id)
+                            }}>+</span>
                     </li>
                 ))
             }

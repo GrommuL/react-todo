@@ -20,104 +20,45 @@
       ]
     },
     {
-      "email": "asd@mail.ru",
-      "password": "$2a$10$gRjrrrJp6xIXnE8X/KRv0uZs1Dn0Et8hfCRTdVbzrM7infXxGxoFm",
-      "login": "123",
-      "categories": [],
-      "id": 123124
-    },
-    {
-      "email": "as2d@mail.ru",
-      "password": "$2a$10$iCaj4ZUsxeksCvCcS5ZPm.rMA/KW1W.R4unGlvMGFc3quNyQVf5ZK",
-      "login": "1233",
-      "categories": [],
-      "id": 123125
-    },
-    {
-      "email": "aaa@mail.ru",
-      "password": "$2a$10$Iz9ZalKdEMu/VF3OkGUYmumw9ihk6v9u4di81pFqVxNPpMB8Te72y",
-      "login": "aaa",
-      "categories": [],
-      "id": 123126
-    },
-    {
-      "email": "df@mail.ru",
-      "password": "$2a$10$2ge1DiFw.A8JATQ9XdKhw.0.iY/znCOp2InLi5jrlTrKHIshAJtrW",
-      "login": "df123",
-      "categories": [
-        {
-          "id": "eeb7e6c3-0c97-4541-b1c1-53c85b8fa617",
-          "categoryName": "Frontend",
-          "color": "#A0C0E0",
-          "tasks": []
-        },
-        {
-          "id": "5fb4e163-ac2f-4b4d-aa01-dc446f018727",
-          "categoryName": "Backend",
-          "color": "#997379",
-          "tasks": []
-        },
-        {
-          "id": "c1966817-9090-46cc-953f-70dbf7467a7b",
-          "categoryName": "Fullstack",
-          "color": "#4682B4",
-          "tasks": [
-            {
-              "id": 523645,
-              "taskTitle": "Изучить React",
-              "isComplete": false
-            },
-            {
-              "id": 52645,
-              "taskTitle": "Изучить Vue",
-              "isComplete": true
-            }
-          ]
-        },
-        {
-          "id": "5eb3b28b-af44-4e90-81e4-d8e36f441496",
-          "categoryName": "DataScience",
-          "color": "#FF8C00",
-          "tasks": []
-        },
-        {
-          "id": "50e21929-f0e5-42c4-a3d6-0cbf373607ca",
-          "categoryName": "Home",
-          "color": "#FF8C00",
-          "tasks": []
-        },
-        {
-          "id": "919ad28f-1a99-4aff-b8df-2cc01cdd0f70",
-          "categoryName": "University",
-          "color": "#997379",
-          "tasks": []
-        },
-        {
-          "id": "9077d527-a519-4bea-b106-537e8b683bcb",
-          "categoryName": "Store",
+      "email": "1111@mail.ru",
+      "password": "$2a$10$z/660hOamETU4sfzut9oKOoTezfRtFrnYNifc/2Q.fh8FxkuNZTHu",
+      "login": "1111",
+      "id": "98c96cae-233a-4de6-8cce-bb62c24321d4",
+      "categories": {
+        "0": {
+          "id": "3fffa88c-5b87-4e76-ab95-e4d248de9964",
+          "categoryName": "front",
           "color": "#00FFFF",
           "tasks": []
         },
-        {
-          "id": "a7393adf-9e15-415f-b026-3ed31dc7739f",
-          "categoryName": "Sport",
-          "color": "#FFFF00",
-          "tasks": []
-        },
-        {
-          "id": "a1ce2dc1-653d-43f6-a046-f2c83cb57dbf",
-          "categoryName": "Family",
-          "color": "#FF69B4",
-          "tasks": []
-        },
-        {
-          "id": "8a88b678-52ed-4258-910b-f8d73809105c",
-          "categoryName": "Friends",
-          "color": "#00FF00",
-          "tasks": []
+        "newTask": {
+          "id": "3fffa88c-5b87-4e76-ab95-e4d248de9964",
+          "categoryName": "front",
+          "color": "#00FFFF",
+          "tasks": [
+            {},
+            {
+              "id": "1abd6a2f-a67b-472e-84fe-19ef63273d6c",
+              "taskTitle": "asdsad",
+              "isComplete": false
+            }
+          ]
         }
-      ],
-      "id": 123127
+      }
+    },
+    {
+      "email": "df@mail.ru",
+      "password": "$2a$10$bQl2QYb8TfAoxhBzw.d4feIjWeTPpXGCZ0CyTNrkg1DHRigEu/ALe",
+      "login": "dfdf",
+      "id": "e11a1783-95a5-4ee1-8341-020feda08ebd",
+      "categories": {}
+    },
+    {
+      "email": "qwe@mail.ru",
+      "password": "$2a$10$v0BpJ4u06Iw6VU5/wvHfpOWukipcHGWvBJ33hUOozs1ujXPrkTnbK",
+      "login": "qwe",
+      "categories": [],
+      "id": 123124
     }
   ]
 }
